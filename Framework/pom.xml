@@ -74,8 +74,8 @@
 				</plugin>
 				<!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
 				<plugin>
-					<artifactId>maven-resources-plugin</artifactId>
-					<version>3.0.2</version>
+	<artifactId>maven-resources-plugin</artifactId>
+	<version>3.0.2</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
@@ -87,9 +87,14 @@
 					<version>2.22.1</version>
 					<configuration>
 					<suiteXmlFiles>
-					<suiteXmlFile>XMLFiles/testng.xml</suiteXmlFile>
+					<suiteXmlFile>XMLFiles/${xmlFiles}</suiteXmlFile>
 					</suiteXmlFiles>
-					</configuration>
+					
+			<systemPropertyVariables>
+					<executionBrowser>${browser}</executionBrowser>
+					<appURL>${urlToBeTested}</appURL>
+			</systemPropertyVariables>
+				</configuration>
 				</plugin>
 				
 				<plugin>
