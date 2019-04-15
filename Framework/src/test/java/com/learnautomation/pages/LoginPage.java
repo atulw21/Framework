@@ -15,7 +15,6 @@ public class LoginPage
 		this.driver=ldriver;
 	}
 	
-	
 	@FindBy(how = How.NAME, using = "username1") 
 	WebElement uname;
 	
@@ -37,10 +36,8 @@ public class LoginPage
 		} catch (InterruptedException e) 
 		{
 		}
-				
 		
 		loginButton.click();
-		
 		
 	}
 	
