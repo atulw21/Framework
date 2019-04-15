@@ -15,7 +15,7 @@ public class LoginPage
 		this.driver=ldriver;
 	}
 	
-	@FindBy(how = How.NAME, using = "username1") 
+	@FindBy(how = How.NAME, using = "username") 
 	WebElement uname;
 	
 	@FindBy(how = How.NAME, using = "password") 
